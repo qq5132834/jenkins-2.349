@@ -1,3 +1,5 @@
+mvn spotless:apply clean   install -Dmaven.test.skip=true -Denforcer.skip=true
+
 [![][ButlerImage]][website] 
 
 # About

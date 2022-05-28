@@ -1,4 +1,7 @@
-mvn spotless:apply clean   install -Dmaven.test.skip=true -Denforcer.skip=true
+参考：https://www.jenkins.io/zh/doc/pipeline/tour/getting-started/
+打包：mvn spotless:apply clean   install -Dmaven.test.skip=true -Denforcer.skip=true
+
+
 
 [![][ButlerImage]][website] 
 

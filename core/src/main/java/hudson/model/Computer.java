@@ -208,7 +208,7 @@ public /*transient*/ abstract class Computer extends Actionable implements Acces
      * Keeps track of stack traces to track the termination requests for this computer.
      *
      * @since 1.607
-     * @see Executor#resetWorkUnit(String)
+     * @see Executor resetWorkUnit(String)
      */
     private final transient List<TerminationRequest> terminatedBy = Collections.synchronizedList(new ArrayList<>());
 
@@ -248,7 +248,7 @@ public /*transient*/ abstract class Computer extends Actionable implements Acces
      * and the {@link Executor} starting to execute the task.
      *
      * @return the (possibly empty) list of termination requests.
-     * @see Executor#resetWorkUnit(String)
+     * @see Executor resetWorkUnit(String)
      * @since 1.607
      */
     public List<TerminationRequest> getTerminatedBy() {
@@ -819,7 +819,7 @@ public /*transient*/ abstract class Computer extends Actionable implements Acces
     }
 
     /**
-     * Called by {@link Jenkins#updateComputerList()} to notify {@link Computer} that it will be discarded.
+     * Called by {@link Jenkins updateComputerList()} to notify {@link Computer} that it will be discarded.
      *
      * <p>
      * Note that at this point {@link #getNode()} returns null.
@@ -834,7 +834,7 @@ public /*transient*/ abstract class Computer extends Actionable implements Acces
     }
 
     /**
-     * Called by {@link Jenkins#updateComputerList()} to notify {@link Computer} that it will be discarded.
+     * Called by {@link Jenkins updateComputerList()} to notify {@link Computer} that it will be discarded.
      *
      * <p>
      * Note that at this point {@link #getNode()} returns null.

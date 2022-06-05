@@ -9,9 +9,9 @@ public class Msg {
         key = key.replaceAll("_", ".");
         ResourceBundle rb = ResourceBundle.getBundle(path);
         String val = rb.getString(key);
-        System.out.println("ResourceBundle:" + rb.getLocale().getCountry() + "/" + rb.getLocale().getLanguage());
-        System.out.println("path:" + path);
-        System.out.println("key:" + key + ",val:" + val);
+        System.out.println("huangliao.ResourceBundle:" + rb.getLocale().getCountry() + "/" + rb.getLocale().getLanguage());
+        System.out.println("huangliao.path:" + path);
+        System.out.println("huangliao.key:" + key + ",val:" + val);
         return val;
     }
 
@@ -27,10 +27,12 @@ public class Msg {
         key = key.replaceAll("_", ".");
         ResourceBundle rb = ResourceBundle.getBundle(path);
         String val = rb.getString(key);
-        val = val + " " +  stringBuilder.toString();
-        System.out.println("ResourceBundle:" + rb.getLocale().getCountry() + "/" + rb.getLocale().getLanguage());
-        System.out.println("path:" + path);
-        System.out.println("key:" + key + ",val:" + val);
+        for (int i = 0; i < vs.length; i++){
+            val = val.replaceAll("\\{" + i + "\\}", vs[i]);
+        }
+        System.out.println("huangliao.format.ResourceBundle:" + rb.getLocale().getCountry() + "/" + rb.getLocale().getLanguage());
+        System.out.println("huangliao.format.path:" + path);
+        System.out.println("huangliao.format.key:" + key + ",val:" + val);
         return val + " " +  stringBuilder.toString();
     }
 

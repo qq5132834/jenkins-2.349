@@ -396,33 +396,33 @@ THE SOFTWARE.
             <maxHeap>768</maxHeap>
           </configuration>
         </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <!-- Version specified in parent POM -->
-          <configuration>
-            <consoleOutput>true</consoleOutput>
-            <includeTestSourceDirectory>true</includeTestSourceDirectory>
-            <configLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/checkstyle-configuration.xml</configLocation>
-            <suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/checkstyle-suppressions.xml</suppressionsLocation>
-          </configuration>
-          <dependencies>
-            <dependency>
-              <groupId>com.puppycrawl.tools</groupId>
-              <artifactId>checkstyle</artifactId>
-              <version>9.3</version>
-            </dependency>
-          </dependencies>
-          <executions>
-            <execution>
-              <id>validate</id>
-              <goals>
-                <goal>check</goal>
-              </goals>
-              <phase>validate</phase>
-            </execution>
-          </executions>
-        </plugin>
+<!--        <plugin>-->
+<!--          <groupId>org.apache.maven.plugins</groupId>-->
+<!--          <artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--          &lt;!&ndash; Version specified in parent POM &ndash;&gt;-->
+<!--          <configuration>-->
+<!--            <consoleOutput>true</consoleOutput>-->
+<!--            <includeTestSourceDirectory>true</includeTestSourceDirectory>-->
+<!--            <configLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/checkstyle-configuration.xml</configLocation>-->
+<!--            <suppressionsLocation>${maven.multiModuleProjectDirectory}/src/checkstyle/checkstyle-suppressions.xml</suppressionsLocation>-->
+<!--          </configuration>-->
+<!--          <dependencies>-->
+<!--            <dependency>-->
+<!--              <groupId>com.puppycrawl.tools</groupId>-->
+<!--              <artifactId>checkstyle</artifactId>-->
+<!--              <version>9.3</version>-->
+<!--            </dependency>-->
+<!--          </dependencies>-->
+<!--          <executions>-->
+<!--            <execution>-->
+<!--              <id>validate</id>-->
+<!--              <goals>-->
+<!--                <goal>check</goal>-->
+<!--              </goals>-->
+<!--              <phase>validate</phase>-->
+<!--            </execution>-->
+<!--          </executions>-->
+<!--        </plugin>-->
         <plugin>
           <groupId>com.diffplug.spotless</groupId>
           <artifactId>spotless-maven-plugin</artifactId>
@@ -524,11 +524,11 @@ THE SOFTWARE.
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <!-- Version specified in parent POM -->
-      </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.apache.maven.plugins</groupId>-->
+<!--        <artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--        &lt;!&ndash; Version specified in parent POM &ndash;&gt;-->
+<!--      </plugin>-->
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
